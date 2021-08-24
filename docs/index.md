@@ -21,4 +21,17 @@ objFile.close()
 ```
 
 **Step 3:** Read back pickled data in file via a list. Use try-except clause to pass end-of-file error.
-
+```python
+# Reading back pickled data in file
+objFile = open("Assignment07.dat", "rb")
+with objFile as f:
+    unpickled = []
+    while True:
+        try:
+            unpickled.append(pickle.load(f))
+        except EOFError:  # use try-except clause to bypass end-of-file error
+            break
+print("Here are all of your inputs so far: ")
+for row in unpickled:
+    print(row)
+```
