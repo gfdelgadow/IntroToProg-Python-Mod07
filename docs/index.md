@@ -40,5 +40,5 @@ for row in unpickled:
 ***Program running in Terminal***
 ![Program running in Terminal](/../main/Terminal.png)
 
-##Summary
+## Summary
 In this assignment, I learned how to use pickling to reduce file size, and how to use try-except clauses to handle errors.
